@@ -1,0 +1,44 @@
+.icon-circle {
+    border-radius: 50%;
+    font-size: 120px;
+    text-align: center;
+    border: 3px;
+    border-style: dotted;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    line-height: 180px;
+    margin-top: 30px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+    .btn-danger:hover {
+        color: #fff;
+        background-color: #c9302c;
+        border-color: #ac2925;
+        opacity: 0.8;
+    }
+
+.icon_grande {
+    color: #F39200;
+}
+
+.home-title-ht {
+}
+
+.card-user .avatar.border-orange {
+    border-color: #e48e26;
+}

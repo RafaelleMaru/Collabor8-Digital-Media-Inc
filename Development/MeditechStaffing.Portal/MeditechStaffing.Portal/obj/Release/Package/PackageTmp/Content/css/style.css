@@ -1,0 +1,224 @@
+body {
+    background-size: cover;
+    /* font-family: 'Tangerine', serif; */
+    font-family: "Hind";
+}
+
+.login-body {
+    background: url(../img/header-hand.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form-signin-heading {
+    color: #f99317;
+}
+
+.login-form {
+    opacity: 0.95;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+}
+
+.login-bg img {
+    padding: 5px 5px 5px 5px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(249, 147, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(249, 147, 23, 0.6);
+    outline: 0 none;
+}
+
+.avatar {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.bg-meditech-header {
+    background-color: #2d2d2d;
+    height: 76px;
+    /*
+	background-image: url(../img/agedcare.png);
+	background-size:auto 100% ;
+	background-repeat: no-repeat;
+	background-position: right;
+	*/
+}
+
+
+
+
+.font-meditech-orange {
+    color: #f99317;
+}
+
+.font-meditech-red {
+    color: #c9302c;
+}
+
+.bg-meditech-orange {
+    background-color: #f99317;
+}
+
+.bg-meditech-red {
+    background-color: #c9302c;
+}
+
+.bg-meditech-white {
+    background-color: #fff;
+}
+
+.bg-agedcare {
+}
+
+.sidebar-logo {
+    width: 100%;
+}
+
+.sidebar {
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+
+
+.footer {
+    background-color: #222222;
+    color: #666666;
+}
+
+/* ---------------------------- start override bootstrap */
+
+.navbar-brand {
+    vertical-align: middle;
+}
+
+.nav-header {
+    color: #fff;
+    background: url(../img/header-hand.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*  ---------------------------- end override bootstrap */
+
+/*  ---------------------------- start override light-bootstrap */
+.card .title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3333333;
+    font-weight: 700;
+}
+
+.card .category {
+    color: #fff;
+}
+
+.card .whoswho-title {
+    color: #f99317;
+    font-size: 18px;
+    line-height: 1.3333333;
+    font-weight: 700;
+}
+
+.author small::before {
+    content: "";
+    display: block;
+}
+
+.card-whoswho {
+    min-height: 500px;
+    border-width: 5px;
+    border-color: #000;
+    background-color: #000;
+}
+
+.card .header {
+    height: 70px;
+    background-color: #c9302c;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:not(.btn):hover, .navbar-default .navbar-nav > .active > a:not(.btn):focus, .navbar-default .navbar-nav > li > a:not(.btn):hover, .navbar-default .navbar-nav > li > a:not(.btn):focus {
+    background-color: transparent;
+    border-radius: 3px;
+    color: #f99317;
+    opacity: 1;
+}
+
+
+
+.alert-info {
+    background-color: #f99317;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-bottom-color: #f99317;
+    border-top-color: #f99317;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #f99317;
+}
+
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:not(.btn) {
+    color: #fff;
+}
+
+.sidebar {
+    background-color: #6c6c6c;
+}
+/* ---------------------------- end override light-bootstrap */
+
+

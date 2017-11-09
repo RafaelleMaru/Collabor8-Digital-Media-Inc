@@ -1,0 +1,20 @@
+﻿body{
+    background-size:cover;
+    font-family: 'Tangerine', serif;
+}
+.login-body{
+    background-image: url("img/Background Sydney.jpg");
+}
+.form-signin-heading{
+    color: #f99317;
+}
+
+.login-form{
+    opacity: 0.95;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+.login-bg img{
+    padding: 5px 5px 5px 5px;
+
+}

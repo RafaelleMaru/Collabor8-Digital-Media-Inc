@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+
+    <title>@ViewBag.Title - Meditech Staffing Portal</title>
+   
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/animate.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/light-bootstrap-dashboard.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/font-awesome-4.7.0/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("http://fonts.googleapis.com/css?family=Roboto:400,700,300")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/pe-icon-7-stroke.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/style-user.css")" rel="stylesheet" type="text/css" />
+    
+    @RenderSection("JavaScript", required: false)
+
+    <!--     Fonts and icons     -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+   
+	
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-color="black" data-image="@Url.Content("~/Content/img/sidebar.jpg")">
+
+            <!--
+
+                Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+                Tip 2: you can also add an image using data-image tag
+
+            -->
+            <div class="sidebar-wrapper">
+                <div class="logo">
+
+
+                    <img src="@Url.Content("~/Content/img/logo-meditech-transparent-big.png")" class="sidebar-logo">
+                </div>
+
+                <ul class="nav">
+
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fa fa-dashboard"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-PP"><i class="fa fa-gavel"></i><p>Policies & Procedures <span class="caret"></span></p></a>
+                    </li>
+                    <ul id="submenu-PP" class="collapse nav sub-menu">
+                        <li><a href="index.html"> <p>Community Staff</p></a></li>
+                        <li><a href="index.html"> <p>Residential Staff</p></a></li>
+                        <li><a href="index.html"> <p>Best Practice Principles</p></a></li>
+                    </ul>
+
+
+
+
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-TR"><i class="fa fa-graduation-cap"></i><p>Training Resources <span class="caret"></span></p></a>
+                    </li>
+                    <ul id="submenu-TR" class="collapse nav sub-menu">
+                        <li><a href="index.html"> <p>Support Worker Induction</p></a></li>
+                        <li><a href="index.html"> <p>Registered Nurse Induction</p></a></li>
+                        <li><a href="index.html"> <p>Occupational Health & safety</p></a></li>
+                        <li><a href="index.html"> <p>Manual Handling</p></a></li>
+                        <li><a href="index.html"> <p>Fire & Evacuation</p></a></li>
+                        <li><a href="index.html"> <p>Wound Management</p></a></li>
+                        <li><a href="index.html"> <p>Medication Management</p></a></li>
+                        <li><a href="index.html"> <p>Diabetic Car & Management</p></a></li>
+                        <li><a href="index.html"> <p>Infection Control</p></a></li>
+                        <li><a href="index.html"> <p>Dementia Care</p></a></li>
+                    </ul>
+
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-N"><i class="fa fa-newspaper-o"></i><p>News <span class="caret"></span></p></a>
+                    </li>
+                    <ul id="submenu-N" class="collapse nav sub-menu">
+                        <li><a href="index.html"> <p>Aged Care</p></a></li>
+                        <li><a href="index.html"> <p>Disability</p></a></li>
+                        <li><a href="index.html"> <p>Staff</p></a></li>
+                    </ul>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-external-link-square"></i>
+                            <p>Rosters</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Action("Index", "Forms")"><i class="fa fa-wpforms"></i><p>Forms</p></a>
+                    </li>
+                    
+
+                    <li>
+                        <a href="whoswho.html">
+                            <i class="fa fa-address-book"></i>
+                            <p>Who's Who</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed bg-meditech-header">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h6><a class="navbar-brand" href="#">Dashboard</a></h6>
+                    </div>
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav navbar-right bg-agedcare">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Welcome, Rod
+                                    <img src="@Url.Content("~/Content/img/faces/profilepic-1.jpg")" class="img-circle avatar">
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        @RenderBody()
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Dashboard
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Policies & Procedures
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Training Resources
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    News
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Rosters
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Forms
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Who's Who
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy; 2017 Powered by <a href="http://www.collabor8digital.com" class="font-meditech-orange">Collabor8 Digital Media Inc.</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="@Url.Content("~/Content/js/jquery-1.10.2.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/js/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/js/bootstrap-checkbox-radio-switch.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/js/chartist.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/js/bootstrap-notify.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/js/light-bootstrap-dashboard.js")"></script>
+    <script type="text/javascript">
+        //Policies and Procedures
+        document.getElementById("mainmenu-user-PP").addEventListener("click", function () {
+            $("#mainmenu-user").hide(1000);
+            $("#submenu-user-PP").show(1000);
+        });
+        document.getElementById("submenu-user-PP-back").addEventListener("click", function () {
+            $("#submenu-user-PP").hide(1000);
+            $("#mainmenu-user").show(1000);
+        });
+
+        //Traning Resources
+        document.getElementById("mainmenu-user-TR").addEventListener("click", function () {
+            $("#mainmenu-user").hide(1000);
+            $("#submenu-user-TR").show(1000);
+        });
+        document.getElementById("submenu-user-TR-back").addEventListener("click", function () {
+            $("#submenu-user-TR").hide(1000);
+            $("#mainmenu-user").show(1000);
+        });
+
+        //News
+        document.getElementById("mainmenu-user-N").addEventListener("click", function () {
+            $("#mainmenu-user").hide(1000);
+            $("#submenu-user-N").show(1000);
+        });
+        document.getElementById("submenu-user-N-back").addEventListener("click", function () {
+            $("#submenu-user-N").hide(1000);
+            $("#mainmenu-user").show(1000);
+        });
+        
+
+        
+    </script>
+
+
+    @RenderSection("scripts", required: false)
+
+</body>
+
+
+
+
+
+</html>
